@@ -496,7 +496,7 @@ html {
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.22rem;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.75;
   color: #333;
@@ -2252,17 +2252,17 @@ img[height] {
 .c-work__timeframe,
 .c-work__title,
 .c-work__location {
-  font-weight: 500;
+  font-weight: 0;
 }
 
 .c-work__timeframe,
 .c-work__location {
   opacity: .6;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .c-work__title {
-  font-size: 0.8rem;
+  font-size: 1.0rem;
 }
 
 .c-social-button {
