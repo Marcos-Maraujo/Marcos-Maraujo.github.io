@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
 
     $('html').addClass('js-enabled');
@@ -9,8 +6,8 @@ $(document).ready(function() {
     setup_dense();
 
     $(window).load(function() {
-        $(".js-preloader").fadeOut(800, function() {
-            $(".js-main-container").fadeIn(800);
+        $(".js-preloader").fadeOut(50, function() {
+            $(".js-main-container").fadeIn(50);
 
             setup_scrollreveal();
             setup_progress_bar_animation();
@@ -18,8 +15,6 @@ $(document).ready(function() {
     });
 
 });
-
-
 
 function setup_progress_bar_animation()
 {
@@ -48,17 +43,12 @@ function setup_progress_bar_animation()
                 }
 
             }
-            //else {
-            //    $element.removeClass('in-view');
-            //}
         });
     });
 
     $window.trigger('scroll');
 
 }
-
-
 
 function setup_dense()
 {
@@ -71,8 +61,6 @@ function setup_dense()
     }
 }
 
-
-
 function setup_scrollreveal()
 {
     if(typeof ScrollReveal !== 'undefined' && $.isFunction(ScrollReveal)) {
@@ -80,23 +68,23 @@ function setup_scrollreveal()
         window.sr = ScrollReveal();
 
         var default_config = {
-            duration: 500,
+            duration: 100,
             delay: 0,
             easing: 'ease',
             scale: 1,
             mobile: false
         };
         var header_config = $.extend(false, default_config, {
-            duration: 1200,
-            delay: 700
+            duration: 20,
+            delay: 20
         });
         var footer_config = $.extend(false, default_config, {
-            duration: 1500,
+            duration: 200,
             distance: 0,
             viewOffset: {top: 0, right: 0, bottom: 100, left: 0}
         });
 
-        var default_delay = 175;
+        var default_delay = 15;
 
         sr.reveal('.a-header', header_config, default_delay);
         sr.reveal('.a-footer', footer_config, default_delay);
