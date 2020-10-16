@@ -53,6 +53,21 @@ a:active,
   color: #fefaee;
 }
 
+/* Links */
+.externalLink {
+  color: #979899;
+  font-weight: bolder;
+}
+
+/* Hover Links */
+.externalLink:hover,
+.externalLink:focus,
+.externalLink:active,
+.externalLink:hover .externalLink {
+  color: #e0a80d;
+}
+
+
 /* Horizontal Rulers */
 hr,
 .t-border-color {
